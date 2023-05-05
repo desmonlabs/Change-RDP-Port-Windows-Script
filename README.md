@@ -3,6 +3,9 @@
 Enhance the Security of your Remote Desktop Connections
 This Powershell script allows you to easily change the default RDP (Remote Desktop) port in Windows. By default, RDP listens on port 3389, but changing the port number helps reduce brute force login attempts and unauthorized access to your Windows systems.
 
+Tested on Windows Server 2019. 
+Compatible with Windows Server 2012, 2016, 2019, 2022 and Windows 10 and 11.
+
 <h2>Why Change the RDP Port?</h2>
 The default RDP port 3389 is a major target for:
 
@@ -17,11 +20,11 @@ The default RDP port 3389 is a major target for:
 <h2>How to Use the Script</h2>
 
 <ul>
-  <li>1. Download the ChangeRDPPort.ps1 script</li>
-  <li>2. Open Powershell and run: . .\ChangeRDPPort.ps1</li>
-  <li>3. Enter a new port number when prompted. Choose a number between 49152 and 65535.</li>
-  <li>4. The script will validate the new port number is available and in the valid range.</li>
-  <li>5. It will then update the necessary registry keys and firewall rules to start using the new RDP port.</li>
+  <li>Download the ChangeRDPPort.ps1 script</li>
+  <li>Open Powershell and run: . .\ChangeRDPPort.ps1</li>
+  <li>Enter a new port number when prompted. Choose a number between 49152 and 65535.</li>
+  <li>The script will validate the new port number is available and in the valid range.</li>
+  <li>It will then update the necessary registry keys and firewall rules to start using the new RDP port.</li>
 </ul>
 
 Please note that you may have to reboot the system for the changes to fully take effect.
